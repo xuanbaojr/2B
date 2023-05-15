@@ -1,3 +1,6 @@
+const express = require('express');
+const app = express();
+const port = 3000;
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://xuanbao_01:02022003aA@cluster0.yjcpjwu.mongodb.net/?retryWrites=true&w=majority";
@@ -118,3 +121,11 @@ async function updateByName(client, name, update){
 }
 
 run().catch(console.dir);
+
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
+
+app.listen( port, () => {
+  console.log(`ok`);
+});
