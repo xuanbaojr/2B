@@ -3,9 +3,12 @@
 const Main = () => {
     return(
         <>
-        XuanBao
+        XuanBao 01
+        hihihihi
         </>
     )
 }
 
 export default Main;
+
+
